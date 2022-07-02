@@ -25,6 +25,7 @@ app.use(express.static(__dirname + '/public'));
 
 // Our routes go here:
 app.get("/",function(req,res,next){
+    console.log('welcome to homepage')
     res.render('home')
 })
 

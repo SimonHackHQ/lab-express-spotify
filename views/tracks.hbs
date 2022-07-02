@@ -1,6 +1,16 @@
-    {{#each tracks}}
-    <div class="track"></div>
-        <p>{{this.name}}</p>
-        <audio controls src={{this.preview_url}}></audio>
-    </div>
-    {{/each}}
+<table>
+    <thead>
+        <td><h2>Title</h2></td>
+        <td><h2>Player</h2></td>
+    </thead>
+    <tbody>
+        {{#each tracks}}
+        <tr>
+        <td>
+            <p>{{this.name}}</p>
+        </td>
+        <td><audio controls src={{this.preview_url}}></audio></td>
+    </tr>
+        {{/each}}
+    </tbody>
+</table>
